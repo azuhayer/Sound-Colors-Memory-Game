@@ -1,6 +1,6 @@
 // global constants
-const clueHoldTime = 1000; //how long to hold each clue's light/sound
-const cluePauseTime = 333; //how long to pause in between clues
+const clueHoldTime = 400; //how long to hold each clue's light/sound
+const cluePauseTime = 222; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 const randomIntArrayInRange = (min, max, n) =>
@@ -14,7 +14,7 @@ var pattern = randomIntArrayInRange(1,4,8);     //Generates random numbers from 
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
-var volume = 0.5;           //between 0.0 and 1.0
+var volume = 0.5;           //between 0.0 and 1.0 (1.0 being the loudest)
 var guessCounter = 0;
 
 function startGame()
